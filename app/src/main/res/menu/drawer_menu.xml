@@ -1,0 +1,92 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_1">
+
+
+        <item
+            android:id="@+id/menu_favorite"
+            android:title="@string/favorite" />
+
+
+        <item
+            android:id="@+id/menu_classes"
+            android:title="@string/classes">
+            <menu>
+                <item
+                    android:id="@+id/classes_basic"
+                    android:title="@string/basic" />
+                <item
+                    android:id="@+id/classes_custom"
+                    android:title="@string/custom" />
+            </menu>
+        </item>
+
+
+        <item
+            android:id="@+id/menu_locations"
+            android:title="@string/locations" >
+            <menu>
+                <item
+                    android:id="@+id/locations_basic"
+                    android:title="@string/basic" />
+                <item
+                    android:id="@+id/locations_custom"
+                    android:title="@string/custom" />
+            </menu>
+        </item>
+
+
+        <item
+            android:id="@+id/menu_tutorials"
+            android:title="@string/tutorials">
+            <menu>
+                <item
+                    android:id="@+id/tutorials_character"
+                    android:title="@string/characters" />
+                <item
+                    android:id="@+id/tutorials_game"
+                    android:title="@string/game" />
+            </menu>
+        </item>
+
+
+
+        <item
+            android:id="@+id/menu_magic"
+            android:title="@string/magic">
+            <menu>
+                <item
+                    android:id="@+id/magic_basic"
+                    android:title="@string/basic" />
+                <item
+                    android:id="@+id/magic_custom"
+                    android:title="@string/custom" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/races"
+            android:title="@string/races">
+            <menu>
+                <item
+                    android:id="@+id/races_basic"
+                    android:title="@string/basic" />
+                <item
+                    android:id="@+id/races_custom"
+                    android:title="@string/custom" />
+            </menu>
+        </item>
+
+    </group>
+
+
+    <group android:id="@+id/menu_group_2">
+        <item
+            android:id="@+id/menu_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/menu_about"
+            android:title="About" />
+    </group>
+
+
+</menu>

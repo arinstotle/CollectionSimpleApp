@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">CollectionSimpleApp</string>
+    <string name="races">Races</string>
+    <string name="classes">Classes</string>
+    <string name="magic">Magic</string>
+    <string name="locations">Locations</string>
+    <string name="favorite">Favorite</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="basic">Basic</string>
+    <string name="custom">Custom</string>
+    <string name="game">Game</string>
+    <string name="characters">Characters</string>
+    <string name="font_regular">NanumMyeongjo-Regular.ttf</string>
+    <string name="font_bold">NanumMyeongjo-Bold.ttf</string>
+    <string name="font_extra_bold">NanumMyeongjo-ExtraBold.ttf</string>
 </resources>
