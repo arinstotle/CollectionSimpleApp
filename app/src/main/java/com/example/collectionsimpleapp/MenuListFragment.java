@@ -23,6 +23,7 @@ import com.squareup.picasso.Picasso;
 public class MenuListFragment extends Fragment {
 
     private ImageView ivMenuUserProfilePhoto;
+    private NavItemSelectedListener navItemSelectedListener;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,7 +40,7 @@ public class MenuListFragment extends Fragment {
         vNavigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
-                Toast.makeText(getActivity(), menuItem.getTitle(), Toast.LENGTH_SHORT).show();
+                navItemSelectedListener.navItemSelectedListener(menuItem);
                 return false;
             }
         });
@@ -76,5 +77,9 @@ public class MenuListFragment extends Fragment {
             mNewTitle.setSpan(new CustomTypeFaceSpan("", font), 0, mNewTitle.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
             mi.setTitle(mNewTitle);
         }
+    }
+
+    public void setNavItemSelectedListener(NavItemSelectedListener navItemSelectedListener) {
+        this.navItemSelectedListener = navItemSelectedListener;
     }
 }
